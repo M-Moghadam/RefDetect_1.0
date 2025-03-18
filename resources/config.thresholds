@@ -1,0 +1,5 @@
+#Threshold values
+
+DiffRefactoringProblem_FirstRound = nameSimilarityValue = 0.4, entitySimilarityThreshold = 0.5, classSimilarityThreshod = 0.6
+
+DiffRefactoringProblem_SecondRound = nameSimilarityValue = 0.3, entitySimilarityThreshold = 0.7, classSimilarityThreshod = 0.6, ExtractInlineMethodThreshold = 0.4

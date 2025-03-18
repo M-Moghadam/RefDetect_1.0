@@ -1,0 +1,3 @@
+package ChangeMethodParameter
+
+class A

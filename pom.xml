@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>RefDetect_1_0_JSS</groupId>
+  <artifactId>RefDetect_1_0_JSS</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+ 
+	<dependencies>
+
+		<dependency>
+			<groupId>org.moeaframework</groupId>
+			<artifactId>moeaframework</artifactId>
+			<version>4.5</version>
+		</dependency>
+
+		<dependency>
+    		<groupId>com.fasterxml.jackson.core</groupId>
+    		<artifactId>jackson-databind</artifactId>
+    		<version>2.18.2</version>
+		</dependency>
+
+	  	<dependency>
+			<groupId>com.github.tsantalis</groupId>
+			<artifactId>refactoring-miner</artifactId>
+			<version>3.0.10</version>
+		</dependency>
+
+	 	 <dependency>
+	    	<groupId>com.googlecode.json-simple</groupId>
+	    	<artifactId>json-simple</artifactId>
+	    	<version>1.1.1</version>
+	  	</dependency>
+	  	
+   	
+    	<dependency>
+    		<groupId>org.eclipse.jgit</groupId>
+    		<artifactId>org.eclipse.jgit</artifactId>
+    		<version>7.0.0.202409031743-r</version>
+		</dependency>
+    	
+    	<dependency>
+    		<groupId>org.apache.poi</groupId>
+    		<artifactId>poi</artifactId>
+   			<version>5.3.0</version>
+		</dependency>
+		
+		<dependency>
+    		<groupId>org.apache.poi</groupId>
+  			<artifactId>poi-ooxml</artifactId>
+   			<version>5.3.0</version>
+		</dependency>
+		
+		
+	</dependencies>
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.13.0</version>
+					<configuration>
+						<release>21</release>
+					</configuration>
+				</plugin>
+				
+		        <plugin>
+		          <groupId>org.apache.maven.plugins</groupId>
+		          <artifactId>maven-jar-plugin</artifactId>
+		          <version>3.2.0</version>
+		          <configuration>
+		            <archive>
+		              <manifestEntries>
+		                <Main-Class>RefDetectRunner</Main-Class>
+		              </manifestEntries>
+		            </archive>
+		          </configuration>
+		        </plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+</project>
